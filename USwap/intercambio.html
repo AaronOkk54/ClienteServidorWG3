@@ -10,79 +10,70 @@
 <body>
 
     <header class="navbar navbar-expand-lg navbar-dark bg-success">
-
         <div class="container">
-
-            <a class="navbar-brand" href="index.html">U-Swap</a>
+            <a class="navbar-brand" href="paginaPrincipal.html">U-Swap</a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
-
                 <ul class="navbar-nav ms-auto">
-
                     <li class="nav-item">
                         <a class="nav-link" href="paginaPrincipal.html">Inicio</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="miPerfil.html">Mi perfil</a>
+                        <a class="nav-link active" href="intercambio.html">Intercambio</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="publicar.html">Publicar</a>
+                        <a class="nav-link" href="inicioSesion.html">Iniciar sesión</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="miPerfil.html">Mi Perfil</a>
+                    </li>
                 </ul>
-
             </div>
-
         </div>
-
     </header>
 
-    <main class="container py-5">
+    <main>
+        <section class="container mt-5">
+            <h1 class="text-center mb-4">Intercambios U-Swap</h1>
 
-        <section class="mb-5">
-            <h1 class="h3 text-success mb-3">Intercambios disponibles</h1>
-            <p class="text-muted">Explora publicaciones cercanas y encuentra un libro que te interese.</p>
-        </section>
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto">
+                    <input type="text" class="form-control" placeholder="Buscar libro, autor o materia">
+                </div>
+            </div>
 
-        <section class="card shadow-sm border-0 mb-5">
-            <div class="card-body">
-                <div class="row g-4 align-items-start">
-                    <div class="col-md-4">
-                        <div class="bg-light rounded p-4 text-center text-muted" style="min-height: 180px; display: flex; align-items: center; justify-content: center;">
-                            Portada del libro
+            <h2 class="mb-4">Publicaciones disponibles</h2>
+
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQySbcOUB6GkuDJ5xGE2bX31Ye20TpFbiEebGyy94fYzcE2yXqgTVf9mcU&s=10" class="card-img-top" alt="Libro de cálculo">
+                        <div class="card-body">
+                            <h5 class="card-title">Cálculo diferencial</h5>
+                            <p class="card-text"><strong>Estado:</strong> Bueno</p>
+                            <p class="card-text"><strong>Intercambio por:</strong> Álgebra lineal</p>
+                            <p class="card-text"><strong>Vendedor:</strong> Ana Morales</p>
+                            <p class="card-text"><strong>Contacto:</strong> 8833-1234</p>
+                            <button class="btn btn-success">Solicitar intercambio</button>
                         </div>
-                    </div>
-
-                    <div class="col-md-8">
-                        <h2 class="h5 text-success">Publicación de intercambio</h2>
-                        <h3 class="h6">Cálculo diferencial</h3>
-                        <p class="mb-2"><strong>Estado:</strong> Bueno</p>
-                        <p class="mb-2"><strong>Intercambio por:</strong> Álgebra lineal</p>
-                        <p class="mb-2"><strong>Vendedor:</strong> Ana Morales</p>
-                        <p class="mb-2"><strong>Contacto:</strong> 8833-1234</p>
-                        
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-dark text-white text-center mt-5 p-3">
-
         <p class="mb-1">U-Swap</p>
-
-        <p class="mb-0">
-            USwap | Universidad Fidelitas | 2026
-        </p>
-
+        <p class="mb-0">USwap | Universidad Fidélitas | 2026</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
