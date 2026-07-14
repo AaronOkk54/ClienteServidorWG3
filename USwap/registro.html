@@ -1,28 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Registro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+
 </head>
+
 <body>
 
-    <header>
-    </header>
+    <header class="navbar navbar-expand-lg navbar-dark bg-success">
 
-    <nav>
-    </nav>
+        <div class="container">
+
+            <a class="navbar-brand" href="paginaPrincipal.html">U-Swap</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginaPrincipal.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicioSesion.html">Iniciar sesión</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="registro.html">Registrarse</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
 
     <main>
 
-        <section>
+        <section class="container vh-100 d-flex justify-content-center align-items-center">
+
+            <div class="card shadow p-4" style="max-width: 500px; width: 100%;">
+
+                <h2 class="text-center mb-4">
+                    Crear una cuenta
+                </h2>
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Nombre completo
+                        </label>
+
+                        <input type="text" class="form-control" placeholder="Ingrese su nombre">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Correo electrónico
+                        </label>
+
+                        <input type="email" class="form-control" placeholder="Ingrese su correo">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Contraseña
+                        </label>
+
+                        <input type="password" class="form-control" placeholder="Cree una contraseña">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Confirmar contraseña
+                        </label>
+
+                        <input type="password" class="form-control" placeholder="Repita la contraseña">
+
+                    </div>
+
+                    <div class="d-grid">
+
+                        <button type="submit" class="btn btn-success">
+                            Registrarse
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <p class="text-center mt-3">
+
+                    ¿Ya tienes una cuenta?
+
+                    <a href="inicioSesion.html">
+                        Inicia sesión aquí
+                    </a>
+
+                </p>
+
+            </div>
 
         </section>
 
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center p-3">
+
+        <p class="mb-1">U-Swap</p>
+
+        <p class="mb-0">
+            USwap | Universidad Fidélitas | 2026
+        </p>
+
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
