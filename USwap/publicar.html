@@ -13,7 +13,7 @@
 
         <div class="container">
 
-            <a class="navbar-brand" href="#">U-Swap</a>
+            <a class="navbar-brand" href="index.html">U-Swap</a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -24,15 +24,15 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
+                        <a class="nav-link" href="paginaPrincipal.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Iniciar sesión</a>
+                        <a class="nav-link" href="miPerfil.html">Mi perfil</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="registro.html">Registrarse</a>
+                        <a class="nav-link active" href="publicar.html">Publicar</a>
                     </li>
 
                 </ul>
@@ -43,13 +43,45 @@
 
     </header>
 
-    <nav>
-    </nav>
+    <main class="container py-5">
 
-    <main>
+        <section class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <h1 class="h3 text-success mb-4">Publicar un libro</h1>
 
-        <section>
+                        <form>
+                            <div class="mb-3">
+                                <label for="titulo" class="form-label">Título del libro</label>
+                                <input type="text" class="form-control" id="titulo" placeholder="Ingresa el título del libro">
+                            </div>
 
+                            <div class="mb-3">
+                                <label for="descripcion" class="form-label">Descripción</label>
+                                <textarea class="form-control" id="descripcion" rows="4" placeholder="Descripcion corta de la publicacion "></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="categoria" class="form-label">Categoría</label>
+                                <select class="form-select" id="categoria">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Venta</option>
+                                    <option value="2">Intercambio</option>
+                                    <option value="3">Donación</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="imagen" class="form-label">Adjuntar imagen</label>
+                                <input class="form-control" type="file" id="imagen" accept="image/*">
+                            </div>
+
+                            <button type="submit" class="btn btn-success">Publicar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
